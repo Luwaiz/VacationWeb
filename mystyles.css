@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img,a,button{
+    text-decoration: none;
+    display: block;
+}
+#header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    
+}
+#header1{
+    width: 33%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header2{
+    width: 33.9%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 80px;
+}
+#header3{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iconImage{
+    width: 45%;
+    height: 70%;
+}
+.link-cont{
+    padding: 10px 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.link-cont:hover{
+    background-color: #f2f2f2;
+    border-radius: 20px 20px;
+}
+#sign-button{
+    padding: 0px 20px;
+    height: 70%;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+}
+#USD-button{
+    display: flex;
+    align-items: center;
+    border: 0;
+    width: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    background-color: white;
+    justify-content: center;
+}
+#USD-button:hover{
+    background-color: #f2f2f2;
+    border-radius: 20px 20px;
+}
+#usd{
+    border-left: 1px solid #e0e0e0 ;
+    padding-left: 5px;
+}
+#usd-icon{
+    padding-right: 5px;
+}
+#where{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 60px;
+
+}
+#where-text{
+    font-weight:800;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #34e0a1;
+}
+#option-cont{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+}
+.option-button{
+    height: 70%;
+    background-color: white;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    display: flex;
+    align-items:center ;
+    padding: 5px 0px;
+    color: #545454;
+    border-bottom: 2px solid white;
+
+}
+.option-button:hover{
+    border-bottom: 2px solid black;
+    color: black;
+}
+.option-text{
+    margin-left: 5px;
+}
+#search-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#search-cont{
+    display: flex;
+    width: 60%;
+    height: 60px;
+    justify-content:center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 5px;
+}
+#search-cont2{
+    width: 82%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#search-cont1{
+    width: 5%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content:flex-end;
+}
+#search-cont3{
+    width: 13%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#search-input{
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+#search-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    outline: none;
+    background-color: #34e0a1;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+}
+#phone-card-cont{
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#phone-card{
+    background:linear-gradient(to right,#d4dff7,#dcc8ff);
+    border-radius: 10px;
+    width: 85%;
+    height: 100%;}
+#image-cont{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/homeImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+}
+#imageText-cont{
+    width :35%;
+    height: 70%;
+    margin-left: 170px;
+}
+#Text1{
+    display: flex;
+    align-items: center;
+}
+#Text1-1{
+    color: #301d49;
+    font-weight:400;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+#Text1-2{
+    background-color: white;
+    color: #301d49;
+    padding: 4px 6px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#Text2{
+    color: #301d49;
+    font-weight: 750;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    padding-right: 100px;
+}
+
+#Text3{
+    margin-top: 10px;
+    color: #301d49;
+    font-weight: 650;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+}
+#AI-button{
+    width: 200px;
+    height: 50px;
+    background-color:#301d49;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    margin-top: 40px;
+}
+#AI-text{
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
