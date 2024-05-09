@@ -398,6 +398,18 @@ img,a,button{
     gap: 15px;
     align-items: center;
 }
+.favorite{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-right: 5px;
+}
 .tour-card{
     width: 265px;
     height: 100%;
@@ -409,7 +421,9 @@ img,a,button{
     border-radius: 5px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;}
+    background-position: center;
+    display: flex;
+}
 #tour-card1{
     background-image: url("./images/tour1.jpg");
 
@@ -492,7 +506,9 @@ img,a,button{
     border-radius: 5px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;}
+    background-position: center;
+    display: flex;
+}
 #explore-card1{
     background-image: url("./images/explore1.jpg");
 
@@ -801,13 +817,3 @@ img,a,button{
     justify-content: flex-end;
     gap: 20px;
 }
-
-
-
-
-
-
-
-
-
-
