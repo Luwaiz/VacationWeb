@@ -21,7 +21,7 @@ function moveRight(){
 }
 function moveLeft(){
     let right=document.getElementById("hotels-cont")
-    right.scrollLeft = right.offsetWidth
+    right.scrollLeft -= right.offsetWidth
 
 }
 function trending1(){
