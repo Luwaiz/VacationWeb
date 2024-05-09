@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="https://kit.fontawesome.com/f44b1751ba.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="header1">
+                <img id="iconImage" src="images/vacationIcon.jpg" alt=""/>
+            </div>
+            <div id="header2">
+            <div class="link-cont"><a class="">Discover</a></div>
+            <div class="link-cont"><a>Trips</a></div>
+            <div class="link-cont"><a>Review</a></div>
+            <div class="link-cont"><a>More</a></div>
+            </div>
+            <div id="header3">
+                <button id="USD-button">
+                    <i id="usd-icon" class="fa-solid fa-globe"></i>
+                    <p id="usd">USD</p>
+                </button>
+                <button id="sign-button">Sign in</button>
+            </div>
+        </div>
+    </header>
+    <div id="where"><p id="where-text">Where to?</p></div>
+    <section id="option-cont">
+        <button onclick="search()" class="option-button">
+            <i class="fa-solid fa-house"></i>
+            <p class="option-text">Search All</p>
+        </button>
+        <button onclick="hotel()" class="option-button">
+            <i class="fa-solid fa-hotel"></i>
+            <p class="option-text">Hotels</p>
+        </button>
+        <button onclick="ToDo()" class="option-button">
+            <i class="fa-regular fa-calendar-check"></i>
+            <p class="option-text">Things To Do</p>
+        </button>
+        <button onclick="restaurant()" class="option-button">
+            <i class="fa-solid fa-cookie-bite"></i>
+            <p class="option-text">Restaurants</p>
+        </button>
+        <button onclick="vacation()" class="option-button">
+            <i class="fa-solid fa-house-flag"></i>
+            <p class="option-text">Vacation Rentals</p>
+        </button>
+    </section>
+    <section id="search-div">
+        <div id="search-cont">
+            <div id="search-cont1">
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <div id="search-cont2">
+                <input type="text" id="search-input" placeholder="Places to go, things to do , hotels...">
+            </div>
+            <div id="search-cont3">
+                <button id="search-button">
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="phone-card-cont">
+        <div id="phone-card">
+            <div id="image-cont">
+                <div id="imageText-cont">
+                    <div id="Text1">
+                        <p id="Text1-1">
+                            Powered by AI
+                        </p>
+                        <p id="Text1-2">
+                            BETA
+                        </p>
+                    </div>
+                    <p id="Text2">Build a trip in minutes</p>
+                    <p id="Text3">Get a personalized itinerary just for you, guided by traveler tips and reviews.</p>
+                    <button id="AI-button">
+                        <i id="AI-icon" class="fa-solid fa-location-pin-lock"></i>
+                        <p id="AI-text">Start a trip with AI</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hotels">
+        <div class="hotel-top-cont">
+            <p class="top-text1">Stay somewhere award-winning</p>
+            <p class="top-text2">2024’s Travelers’ Choice Awards Best of the Best Hotels</p>
+        </div>
+        <div id="hotels-cont">
+            <button onclick="moveLeft()" id="arrow-left"><i class="fa-solid fa-arrow-left fa-lg"></i></button>
+            <div class="hotel-card" id="hotel-card1">
+                <div class="image-overlay">
+                    <p class="hotel-text">Top Hotels</p>
+                </div>
+            </div>
+            <div class="hotel-card" id="hotel-card2">
+                <div class="image-overlay">
+                    <p class="hotel-text">All-Inclusive Hotels</p>
+                </div>            </div>
+            <div class="hotel-card" id="hotel-card3">
+                <div class="image-overlay">
+                    <p class="hotel-text">Family-Friendly Hotels</p>
+                </div>            </div>
+            <div class="hotel-card" id="hotel-card4">
+                <div class="image-overlay">
+                    <p class="hotel-text">Luxury Hotels</p>
+                </div>
+            </div>
+            <div class="hotel-card" id="hotel-card5">
+                <div class="image-overlay">
+                    <p class="hotel-text">Pet-Friendly Hotels</p>
+                </div>
+            </div>
+            <button onclick="moveRight()" id="arrow-right"><i class="fa-solid fa-arrow-right fa-lg"></i></button>
+        </div>
+    </section>
+    <section id="tours">
+        <div class="hotel-top-cont">
+            <p class="top-text1">Ways to tour Lagos</p>
+            <p class="top-text2">Book these experiences for a close-up look at Lagos.</p>
+        </div>
+        <div id="tours-cont">
+            <div class="tour-card">
+                    <div id="tour-card1" class="tour-card-image">
+                    </div>
+                    <div class="tour-text-cont">
+                        <p class="tour-text">Slave Trade Tour: Badagry Black Heritage Adventure</p>
+                        <div class="rating">
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <p class="rate-num">8</p>
+                        </div>
+                        <p class="tour-price">from $246 per adult</p>
+                    </div>
+            </div>
+            <div class="tour-card">
+                <div id="tour-card2" class="tour-card-image">
+                </div>
+                    <div class="tour-text-cont">
+                        <p class="tour-text">Lagos City Tours</p>
+                        <div class="rating">
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <p class="rate-num"11</p>
+                        </div>
+                        <p class="tour-price">from $100 per adult</p>
+                    </div>
+              </div>
+            <div class="tour-card">
+                <div id="tour-card3" class="tour-card-image" >
+                </div>
+                    <div class="tour-text-cont">
+                        <p class="tour-text">Explore Lagos Nigeria with a professional Private Guide in 4 days</p>
+                        <div class="rating">
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <p class="rate-num">9</p>
+                        </div>
+                        <p class="tour-price">from $1,093 per adult</p>
+                    </div>
+            </div>
+            <div class="tour-card">
+                <div id="tour-card4" class="tour-card-image">
+                </div>
+                    <div class="tour-text-cont">
+                        <p class="tour-text">Makoko Floating Community Tour</p>
+                        <div class="rating">
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <i class="circle" class="fa-solid fa-circle"></i>
+                            <p class="rate-num">17</p>
+                        </div>
+                        <p class="tour-price">from $174 per adult</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section id="explore">
+        <div id="explore-container">
+        <div class="hotel-top-cont">
+            <p class="top-text1">More to explore</p>
+        </div>
+        <div id="explores-cont">
+            <div class="explore-card">
+                    <div id="explore-card1" class="explore-card-image">
+                    </div>
+                    <div class="explore-text-cont">
+                        <p class="explore-text">20 summer vacation ideas across the U.S.</p>
+                    </div>
+            </div>
+            <div class="explore-card">
+                <div id="explore-card2" class="explore-card-image">
+                </div>
+                    <div class="explore-text-cont">
+                        <p class="explore-text">10 perfect days in Greece</p>
+                    </div>
+              </div>
+            <div class="explore-card">
+                <div id="explore-card3" class="explore-card-image" >
+                </div>
+                    <div class="explore-text-cont">
+                        <p class="explore-text">How to explore Boston with kids</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<section id="destinations">
+    <div class="hotel-top-cont">
+        <p class="top-text1">Top destinations for your next vacation</p>
+    </div>
+    <div id="destination-cont">
+        <div class="hotel-card" id="destination-card1">
+            <div class="image-overlay">
+                <p class="hotel-text">Yellowstone National Park, WY</p>
+            </div>
+        </div>
+        <div class="hotel-card" id="destination-card2">
+            <div class="image-overlay">
+                <p class="hotel-text">Punta Cana, Dominican Republic</p>
+            </div>
+         </div>
+        <div class="hotel-card" id="destination-card3">
+            <div class="image-overlay">
+                <p class="hotel-text">Orlando, FL</p>
+            </div>
+        </div>
+        <div class="hotel-card" id="destination-card4">
+            <div class="image-overlay">
+                <p class="hotel-text">Sedona, AZ</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="awards-container">
+    <div id="award-container1">
+        <div>
+        <div id="eagle-logo-cont"><img id="eagle-logo" src="images/eagleLogo-removebg-preview.png" alt=""></div>
+        <p id="award-text1">Travelers' Choice Awards Best of the Best</p>
+        <p id="award-text2">Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+        <button id="award-button">See the winners</button>
+        </div>
+    </div>
+    <div id="award-container2">
+        <img id="award-image" src="images/tc_cards_2024_c04.png" alt="">
+    </div>
+</section>
+<section id="trending">
+    <div id="trend-cont">
+    <p id="trending-text">Trending in travel</p>
+    <div id="trending-opt">
+        <button onclick="trending1()" class="travel-opt">Spring Destinations</button>
+        <button onclick="trending2()" class="travel-opt">2024 Summer Olympics</button>
+    </div>
+    <div id="travel">
+    <div class="travel-cont">
+        <p class="travel-text">Nashville</p>
+        <p class="travel-text">Charleston</p>
+        <p class="travel-text">Sedona</p>
+        <p class="travel-text">New Orleans</p>
+        <p class="travel-text">Washington DC</p>
+
+    </div>
+    <div class="travel-cont">
+        <p class="travel-text">Rome</p>
+        <p class="travel-text">Prague</p>
+        <p class="travel-text">Santorini</p>
+        <p class="travel-text">Budapest</p>
+        <p class="travel-text">Copenhagen</p>
+
+    </div>
+    <div class="travel-cont">
+        <p class="travel-text">Costa Rica</p>
+        <p class="travel-text">Maui</p>
+        <p class="travel-text">Belize</p>
+        <p class="travel-text">Puerto Vallarta</p>
+        <p class="travel-text">Cabo San Lucas</p>
+    </div>
+    <div class="travel-cont">
+        <p class="travel-text">Tokyo</p>
+        <p class="travel-text">Madrid</p>
+        <p class="travel-text">Bermuda</p>
+        <p class="travel-text">Maldives</p>
+        <p class="travel-text">Mexico city</p>
+
+    </div>
+    </div>
+    </div>
+</section>
+<section id="trips-advisor">
+    <div id="trips-advisor-container">
+        <div id="trips-cont-up">
+            <div id="trips-up-left">
+                 <div class="trips-cont">
+                    <p class="travel-textTop">About Tripadvisor</p>
+                    <p class="travel-text">About Us</p>
+                    <p class="travel-text">Press</p>
+                    <p class="travel-text">Resources and Policies</p>
+                    <p class="travel-text">Careers</p>
+                    <p class="travel-text">Investor Relations</p>
+                    <p class="travel-text">Trust & Safety</p>
+                    <p class="travel-text">Contact us</p>
+                    <p class="travel-text">NAccessibility Statement</p>
+                </div>
+                <div class="trips-cont">
+                    <p class="travel-textTop">Explore</p>
+                    <p class="travel-text">Write a review</p>
+                    <p class="travel-text">Add a Place</p>
+                    <p class="travel-text">Join</p>
+                    <p class="travel-text">Travelers' Choice</p>
+                    <p class="travel-text">GreenLeaders</p>
+                    <p class="travel-text">Blog</p>
+                    <p class="travel-text">Help Center</p>
+                    <p class="travel-text">Travel Articles</p>
+                </div>
+                <div class="trips-cont">
+                    <p class="travel-textTop">Do Business With Us</p>
+                    <p class="travel-text">Owners</p>
+                    <p class="travel-text">Business Advantage</p>
+                    <p class="travel-text">Sponsored Placements</p>
+                    <p class="travel-text">Advertise with Us</p>
+                    <p class="travel-text">Access our Content API</p>
+                    <p class="travel-text">Become an Affiliate</p>
+                    <p class="travel-text">Get The App</p>
+                    <p class="travel-text">iPhone App</p>
+                    <p class="travel-text">Android App</p>
+                </div>
+            </div>
+            <div id="trips-up-right">
+                <p class="travel-textTop">Tripadvisor Sites</p> 
+                <p class="travel-text">Discover your dream destination with Jetsetter</p>
+                <p class="travel-text">Book the best restaurants with TheFork</p>
+                <p class="travel-text">Book tours and attraction tickets on Viator</p>
+                <p class="travel-text">Read cruise reviews on Cruise Critic</p>
+                <p class="travel-text">Get airline seating charts on Seat Guru</p>
+                <p class="travel-text">Find vacation rentals on FlipKey</p>
+                <p class="travel-text">Search for holiday rentals on Holiday Lettings</p>
+                <p class="travel-text">Plan and book your next trip with Reco Trip Designers</p>
+            </div>
+        </div>
+        <div id="trips-cont-down">
+            <div id="trips-down-left">
+                <div id="left-up">
+                    <div id="trips-image">
+                        <img src="/images//Tripadvisor_logo-removebg-preview.png" alt="" id="image-trips">
+                    </div>
+                    <div id="left-up-text">
+                        <p class="tiny-text">© 2024 Tripadvisor LLC All rights reserved.</p>
+                        <div id="link-container">
+                            <a class="link-advisor">Terms of Use</a>
+                            <a class="link-advisor">Privacy and Cookies Statement</a>
+                            <a class="link-advisor">Cookie consent</a>
+                            <a class="link-advisor">Site Map</a>
+                            <a class="link-advisor">How the site works</a>
+                            <a class="link-advisor">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="tiny-text">This is the version of our website addressed to speakers of English in the United States. If you are a resident of another country or region, 
+                    please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. more</p>
+
+            </div>
+            <div id="trips-down-right">
+                <div id="dropboxes">
+                    <select class="dropTitle" id="currency">
+                        <option>$ USD</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                    <select class="dropTitle" id="country">
+                        <option>United States</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+                <div id="social-icons">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                    <i class="fa-brands fa-x-twitter fa-lg"></i>
+                    <i class="fa-brands fa-pinterest fa-lg"></i>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<script src="/script.js"></script>
+</body>
+</html>
