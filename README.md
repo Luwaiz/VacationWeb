@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Technology](#technology)
-- [About](#about)
+- [Description](#description)
 - [Installation](#installation)
 - [License](#license)
 - [Bugs](#bugs)
@@ -22,7 +22,7 @@
 -   Font Awesome
 -   Google Fonts
 
-## About
+## Description
 
 This project is an identical clone of the landing page for the Tripsadvisor website. It includes some minimal features which I was able to implement using vanilla JavaScript while maintaining the overall appearance of the website using cascading style sheets(CSS).
 
