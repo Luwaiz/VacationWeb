@@ -16,7 +16,13 @@ function restaurant(){
 
 function moveRight(){
     let right=document.getElementById("hotels-cont")
-    right.scrollLeft= right.offsetWidth
+    right.scrollLeft += right.offsetWidth
+
+}
+function moveLeft(){
+    let right=document.getElementById("hotels-cont")
+    right.scrollLeft = right.offsetWidth
+
 }
 function trending1(){
    let travel= document.getElementById("travel")

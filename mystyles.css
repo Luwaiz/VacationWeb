@@ -301,7 +301,23 @@ img,a,button{
 #hotels-cont::-webkit-scrollbar{
     appearance: none;
 }
-#arrow{
+#arrow-left{
+    position: absolute;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: -10px;
+}
+#arrow-right{
     position: absolute;
     background-color: white;
     height: 30px;
