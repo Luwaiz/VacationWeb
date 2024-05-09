@@ -293,10 +293,29 @@ img,a,button{
     margin-top: 30px;
     width: 1106px;
     height: 70%;
-    overflow: hidden;
+    overflow: auto;
     gap: 15px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
+}
+#hotels-cont::-webkit-scrollbar{
+    appearance: none;
+}
+#arrow{
+    position: absolute;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: -10px;
 }
 .top-text1{
     font-weight: 700;
@@ -314,10 +333,10 @@ img,a,button{
     width: 265px;
     height: 100%;
     border-radius: 5px;
-    object-fit: cover;
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
+    /* object-fit: cover; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 #hotel-card1{
     background-image: url("./images/hotel1.jpg");
@@ -330,6 +349,9 @@ img,a,button{
 }
 #hotel-card4{
     background-image: url("./images/hotel4.jpg");
+}
+#hotel-card5{
+    background-image: url("./images/hotel6.jpg");
 }
 .image-overlay{
     width: 100%;

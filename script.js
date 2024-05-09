@@ -14,6 +14,10 @@ function restaurant(){
     document.getElementById("where-text").innerHTML="Find places to eat"
 }
 
+function moveRight(){
+    let right=document.getElementById("hotels-cont")
+    right.scrollLeft= right.offsetWidth
+}
 function trending1(){
    let travel= document.getElementById("travel")
    let newContent=`
