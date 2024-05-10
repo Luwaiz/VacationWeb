@@ -19,6 +19,7 @@
 -   html
 -   javascript
 -   CSS
+-   Git
 -   Font Awesome
 -   Google Fonts
 
