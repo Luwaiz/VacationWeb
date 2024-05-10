@@ -30,7 +30,7 @@ This project is an identical clone of the landing page for the Tripsadvisor webs
 ## Installation
 
 - Clone repository to your system.
-- Navigate to the root directory / folder.
+- Navigate to the top directory / folder.
 - Run the index.html file.
 
 ## Bugs
